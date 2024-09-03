@@ -1,0 +1,386 @@
+{
+  "seo_kit": {
+    "h_title": "How to calculate your safety stock?",
+    "main_title": "How to calculate your safety stock?",
+    "level": 1,
+    "content": [
+      {
+        "text": "Title tag: Safety stock: definition, calculation and optimisation methods",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Meta description: Calculate your safety stock and control your supplies using optimisation strategies to minimise risk and reduce your costs.",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "URL: /safety-stock-definition-calculation-optimisation-methods",
+        "url": "/safety-stock-definition-calculation-optimisation-methods",
+        "urls": null
+      },
+      {
+        "text": "Main keyword: safety stock (170)",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Secondary keyword(s): //",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Recommended word count: 1,000",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Occurrences and frequency:",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Alt tags: (1) safety stock warehouse, (2) stock management",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Please enter the title of the white paper instead of its ID in the CTA of your content.",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "CTA: Download our E00017G white paper. (optimise your logistics)",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Internal mesh:",
+        "url": null,
+        "urls": [
+          "https://www.manutan.com/blog/en/glossary/the-pareto-principle-and-its-role-in-procurement-strategy (A00021)",
+          "Inventory management (E00006A)",
+          "https://www.manutan.com/blog/en/optimisation-levers/three-golden-rules-for-improving-your-class-c-purchases (A00292)"
+        ]
+      },
+      {
+        "text": "Contributors: Q00109, Mehdi Kharab, co-founder and Chief Revenue Officer of Colibri, Sales & Operations Planning solution, Voxlog (article FR)",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "Editorial elements required by Google: bulleted list, People Also Ask (PAA)",
+        "url": null,
+        "urls": null
+      },
+      {
+        "text": "People also ask: What is meant by safety stock? What is the safety stock formula? What is safety or buffer stock? What is the safety stock with EOQ?",
+        "url": null,
+        "urls": null
+      }
+    ]
+  },
+  "article": [
+    {
+      "h_title": "How to calculate your safety stock?",
+      "main_title": "How to calculate your safety stock?",
+      "level": 1,
+      "content": [
+        {
+          "text": "In today’s volatile and uncertain world, stock management has become strategic for companies. It represents a key lever to mitigate risks, optimise inventory costs and ensure customer satisfaction. To cope with changes and uncertainties, many companies maintain consistent safety stock in their warehouses. The challenge lies in knowing how to effectively calculate safety stock, using precise formulas, and implementing the right optimisation strategies for procurement.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Safety stock: Definition",
+      "main_title": "How to calculate your safety stock?",
+      "level": 2,
+      "content": [
+        {
+          "text": "Safety stock, also known as buffer stock, refers to an additional inventory level held by a company to deal with unforeseen circumstances. This safety stock is set aside for emergency situations.",
+          "url": null,
+          "urls": null
+        },
+        {
+          "text": "A delivery delay or a spike in demand can quickly prevent the smooth flow of the supply chain. Optimal safety stock allows precisely for preventing potential stockouts related to such uncertainties, without tying up too much capital. This helps avoid potential damages to the company such as customer dissatisfaction, decreased turnover, or additional costs.",
+          "url": null,
+          "urls": null
+        },
+        {
+          "text": "There are two main types of uncertainties that can impact stock levels:\nSupply-related uncertainties such as delivery delays, nonconforming goods, production issues…\nDemand-related uncertainties such as unexpected or seasonal spikes in demand, orders from a major customer…",
+          "url": null,
+          "urls": null
+        },
+        {
+          "text": "Mehdi Kharab, co-founder and Chief Revenue Officer of Colibri, a Sales & Operations Planning solution, reminds us that effective stock management relies on two key elements: \"To have the right stock, in the right place, at the right time, a factual and rigorous methodology combined with an efficient stock management tool are the best allies.\"",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Which products are concerned?",
+      "main_title": "How to calculate your safety stock?",
+      "level": 2,
+      "content": [
+        {
+          "text": "Within a company, not all products necessarily need safety stock, or the same level of safety stock. Before even calculating safety stock, it’s crucial to determine which products will be concerned. Otherwise, this safety stock can cause extra stock in the warehouse and generate unnecessary holding costs.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Pareto’s law",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Pareto’s law, or the 80/20 rule, considers that 80% of the overall value is produced by 20% of the most important units. In our case, this means that safety stock should be maintained for 20% of the products that represent 80% of the total value.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "The spend method",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Inspired by Pareto’s law, the spend method allows for a more refined classification of products based on their value:\nHead spend: 20% of products representing 80% of the value;\nMid-tail spend: 30% of products for 15% of the value;\nLong tail spend: 50% of products for 5% of the value.\nFor each category, different stock management strategies should be applied, with adapted levels of vigilance regarding safety stock.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Variables for calculating safety stock",
+      "main_title": "How to calculate your safety stock?",
+      "level": 2,
+      "content": [
+        {
+          "text": "All safety stock is influenced by different variables: Fluctuations in demand, supplier lead times… Regardless of the method and mathematical formula chosen to calculate safety stock, these variables must be determined.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Lead time",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Lead time indicates the time in days required to receive a new order after placing it. This includes processing, production, and delivery time. This time can vary depending on several factors, notably geographical distance and supplier reliability.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Service levels",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Each company sets objectives in terms of customer service levels. However, this variable depends on the commercial policy, the type of products sold, and the business sector. Service quality is characterised by a company’s ability to meet customer demand, i.e. customer expectations.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Demand variability",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Consumption is sometimes unpredictable and difficult to control, despite accurate demand forecasts. Demand volatility is amplified by competition, market effervescence, etc. And that’s without counting product seasonality. This is why it can be wise to calculate demand variability based on the standard deviation or coefficient of historical sales data variation.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Methods for safety stock calculation",
+      "main_title": "How to calculate your safety stock?",
+      "level": 2,
+      "content": [
+        {
+          "text": "There are several possible methods for calculating safety stock, of which we will detail the workings and mathematical safety stock formulas. Today, many companies calculate their safety stock automatically, using specialised software.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "The simple safety stock formula",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "The company knows its average sales and decides to rely on its experience to determine a reasonable period that should be covered by its safety stock.\nSafety stock = average sale x period to be covered by safety stock",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "The average and maximum safety stock formula",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "The company refers to sales variations observed in the past and decides to apply a method that will allow it to respond to the same trends.\nSafety stock = (maximum sale x maximum delivery time) - (average sale x average delivery time)",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "The normal distribution",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "The normal distribution, or Gaussian distribution, applies when sales volumes are larger. This method allows for quite precise estimates in relation to a normal distribution of demand, to which uncertainties regarding demand and/or lead times are integrated, whether they are independent or not.\nTo apply this method, you should first define:\nYour safety coefficient based on the desired service rate;\nThe standard deviations of your sales and supplies.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "When demand is uncertain",
+      "main_title": "How to calculate your safety stock?",
+      "level": 4,
+      "content": [
+        {
+          "text": "Safety stock = safety coefficient x standard deviation of sales x square root of average delivery time",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "When lead times are uncertain",
+      "main_title": "How to calculate your safety stock?",
+      "level": 4,
+      "content": [
+        {
+          "text": "Safety stock = safety coefficient x average sales x standard deviation of delivery times",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "When demand and lead times are uncertain and independent",
+      "main_title": "How to calculate your safety stock?",
+      "level": 4,
+      "content": [
+        {
+          "text": "Safety stock = safety coefficient x square root ((average delivery time x (standard deviation of sales)²) + (average sales x standard deviation of delivery times)²)",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "When demand and lead times are uncertain and dependent",
+      "main_title": "How to calculate your safety stock?",
+      "level": 4,
+      "content": [
+        {
+          "text": "Safety stock = (safety coefficient x standard deviation of sales x square root of average delivery time) + (safety coefficient x average sales x standard deviation of delivery times)",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Best practices to go even further",
+      "main_title": "How to calculate your safety stock?",
+      "level": 2,
+      "content": [
+        {
+          "text": "To further optimise stock management, there are several strategies well known to logistics professionals.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Defining your reorder point",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "After calculating your safety stock, it is crucial to determine your reorder point, or replenishment point. This serves to define at what minimum stock level (alert stock) the company should trigger replenishment procedures. This action occurs before dipping into the safety stock.\nTo calculate the reorder point, use the formula below:\nReorder point = (average sale x average delivery time) + safety stock",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Equipping yourself with a warehouse management system",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Stockouts can sometimes be linked to poor management of stock data within the company itself. To facilitate stock management, a WMS (Warehouse Management System) solution can really make a difference. These tools allow you to accurately obtain recorded stock data as well as the location of products in the warehouse.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    },
+    {
+      "h_title": "Better collaboration with your suppliers",
+      "main_title": "How to calculate your safety stock?",
+      "level": 3,
+      "content": [
+        {
+          "text": "Companies also have every interest in establishing solid relationships with their suppliers to reduce replenishment times and their variability. Partnership agreements and constant communication allow for better forecasting of potential problems and proactive stock adjustment.",
+          "url": null,
+          "urls": null
+        }
+      ]
+    }
+  ],
+  "cta": "Download our white paper: \"Optimise your logistics\"",
+  "social_media_posts": [
+    {
+      "platform": "LinkedIn",
+      "content": "🛡 📦 Safety stock, your shield against the unexpected!\nIn this volatile and uncertain world, a wise company plans for safety stock.\nThis buffer stock helps to prevent any stockout 🛑\nIt's all about mastering the variables and choosing the right calculation method 👌\nSo, don't let uncertainties disrupt your supply chain anymore!\n👉 Discover how to calculate your safety stock: link\n#stock #logistics #supplychain"
+    },
+    {
+      "platform": "Facebook",
+      "content": "🛡 📦 With safety stock, no more fear of the unexpected!\nIn a world as volatile as it is uncertain, safety stock can save the day.\nThis buffer stock helps to avoid catastrophe: Stockout 🛑\nIt's all about mastering the variables and choosing the right calculation method 👌\nNo more letting uncertainties disrupt your supply chain!\n👉 Discover how to calculate your safety stock: link\n#stock #logistics #supplychain"
+    }
+  ],
+  "do_donts": {
+    "do": [
+      "Use eye-catching headlines!",
+      "Use humour!",
+      "Keep it short and sweet!",
+      "Use people focused communication and storytelling when appropriate",
+      "Structure your post!",
+      "Use emojis sparingly!",
+      "# Use hashtags for organic posts",
+      "Use Mention",
+      "Add a link!",
+      "Include a call to action!"
+    ],
+    "dont": [
+      "Be overly promotional!",
+      "Use jargon or too 'high level' language!",
+      "Use too many emojis",
+      "Be too serious!",
+      "Be controversial!",
+      "Use negative sentences!",
+      "Use 'impolite' formulations towards audience!"
+    ]
+  }
+}
