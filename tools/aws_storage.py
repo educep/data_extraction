@@ -27,25 +27,6 @@ class S3Manager:
             region_name=AWS_REGION,
         ).client("s3")
 
-    def upload_json_file(self, file_name: str, data: dict, folder: str) -> int:
-        """
-        Upload a JSON file to an AWS S3 bucket.
-        :param file_name: The name of the file to be saved in S3 (without extension)
-        :param data: The data to be serialized and uploaded
-        :param folder: The folder within the S3 bucket where the file will be stored
-        :return: int status code (0 for success, 1 for failure)
-        """
-        try:
-            json_data = json.dumps(data, indent=4)
-            s3_file_key = f"{folder}/{file_name}"
-            self.s3_client.put_object(
-                Bucket=S3_BUCKET_NAME, Key=s3_file_key, Body=json_data
-            )
-            return 0
-        except ClientError as e:
-            logger.error(str(e))
-            return 1
-
     def get_available_files(self, folder: str) -> List[str]:
         """
         List all files in a specific folder within an AWS S3 bucket.
