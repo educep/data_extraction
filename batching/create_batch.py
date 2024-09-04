@@ -122,7 +122,11 @@ class BatchManager:
 
         return
 
-    def retrieve_results(self, sleep_time: int = 60):
+    def retrieve_results(self, sleep_time: int = 60, batch_task_id: str = None):
+        # 4. Checking the Status of a Batch
+        if batch_task_id is not None:
+            self.batch_id = batch_task_id
+
         batch_ = self.client.batches.retrieve(self.batch_id)
 
         while batch_manager.check_batch_status():
@@ -141,17 +145,16 @@ class BatchManager:
                 logger.error("No error file available, error Unknown")
                 return
 
-        file_response = self.client.files.content(output_file_id)
-        content = file_response.text
-
         # Specify the file path where you want to save the JSON
         current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-        filename = f"{current_time}_{self.batch_id}.json"
-        folder = BATCH_OUTPUT_FOLDER
-        # Serialize the content to a JSON string and encode it into bytes
-        json_bytes = json.dumps(content).encode("utf-8")
+        filename = f"{current_time}_{self.batch_id}.jsonl"
+
+        file_response = self.client.files.content(output_file_id)
+        json_bytes = file_response.text.encode("utf-8")
+        # Upload the JSONL file to S3 with "text/plain" content type for better browser display
+        c_type = "text/plain"  # for better browser display, not "application/x-ndjson"
         self.bucket.upload_to_s3(
-            filename, json_bytes, folder, content_type="application/json"
+            filename, json_bytes, BATCH_OUTPUT_FOLDER, content_type=c_type
         )
         logger.info(f"Task {self.batch_id} finished")
 
@@ -163,11 +166,7 @@ class BatchManager:
 
         return
 
-    def check_batch_status(self, batch_task_id: str = None):
-        # 4. Checking the Status of a Batch
-        if batch_task_id is not None:
-            self.batch_id = batch_task_id
-
+    def check_batch_status(self):
         batch_ = self.client.batches.retrieve(self.batch_id)
         # todo: add additional checks
         return batch_.status != "completed"
@@ -175,6 +174,6 @@ class BatchManager:
 
 if __name__ == "__main__":
     batch_manager = BatchManager("20240903_ANK-TEST-1")
-    batch_manager.generate_json_batch()
-    batch_manager.send_batch_request()
-    batch_manager.retrieve_results()
+    # batch_manager.generate_json_batch()
+    # batch_manager.send_batch_request()
+    batch_manager.retrieve_results(batch_task_id="batch_m2nkzwZjq0vKfxxJ6BEiqWnD")
